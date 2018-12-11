@@ -17,12 +17,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField("boolean", "LOG_DEBUG", "false")
-            buildConfigField("String", "BASE_URL", "\"https://devqa.zbjsaas.com/app-zhouse-service/\"")
+            buildConfigField("String", "BASE_URL", "\"https://derming.you/\"")
         }
 
         debug {
             buildConfigField("boolean", "LOG_DEBUG", "true")
-            buildConfigField("String", "BASE_URL", "\"https://zhouse-api.zbjsaas.com/\"")
+            buildConfigField("String", "BASE_URL", "\"https://derming.you.com/\"")
         }
     }
     compileOptions {
