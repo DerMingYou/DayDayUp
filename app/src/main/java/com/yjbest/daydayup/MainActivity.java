@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.yjbest.daydayup.activity.LoginActivity;
+import com.yjbest.daydayup.activity.VideoPlayTestActivity;
 import com.yjbest.daydayup.base.BaseActivity;
 import com.yjbest.daydayup.util.NetworkUtils;
 import com.yjbest.daydayup.util.SystemUtils;
@@ -44,7 +45,7 @@ public class MainActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.to_login:
-                LoginActivity.launch(mContext);
+                VideoPlayTestActivity.launch(mContext);
                 break;
         }
     }
