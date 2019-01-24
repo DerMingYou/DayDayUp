@@ -31,8 +31,8 @@ public class VideoPlayTestActivity extends BaseActivity {
     @Override
     public void initView(Bundle savedInstanceState, View contentView) {
         JzvdStd jzvdStd = findViewById(R.id.videoplayer);
-        jzvdStd.setUp("http://1jbest-qatest.oss-cn-shanghai.aliyuncs.com/zhouse/app/user-guide/user-guide300.mp4"
-                , "饺子闭眼睛", Jzvd.SCREEN_WINDOW_NORMAL);
+        jzvdStd.setUp("http://v.zbjsaas.com/customerTrans/30cf43ca47be2f3fa6bc4a5a61473c1b/53a9e05f-1687e8002de-0006-b924-190-c54ce.mp4"
+                , "test", Jzvd.SCREEN_WINDOW_NORMAL);
 //        jzvdStd.thumbImageView.setImage("http://p.qpic.cn/videoyun/0/2449_43b6f696980311e59ed467f22794e792_1/640");
     }
 
