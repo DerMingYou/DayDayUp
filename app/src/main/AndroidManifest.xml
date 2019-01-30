@@ -33,6 +33,8 @@
         <activity android:name=".activity.VideoPlayTestActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.ProvinceDataActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

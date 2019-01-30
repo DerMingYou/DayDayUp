@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.yjbest.daydayup.activity.LoginActivity;
+import com.yjbest.daydayup.activity.ProvinceDataActivity;
 import com.yjbest.daydayup.activity.VideoPlayTestActivity;
 import com.yjbest.daydayup.base.BaseActivity;
 import com.yjbest.daydayup.util.NetworkUtils;
@@ -41,11 +42,14 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.to_login})
+    @OnClick({R.id.to_login, R.id.t_select_province})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.to_login:
                 VideoPlayTestActivity.launch(mContext);
+                break;
+            case R.id.t_select_province:
+                ProvinceDataActivity.launch(mContext);
                 break;
         }
     }

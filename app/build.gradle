@@ -80,4 +80,6 @@ dependencies {
     implementation 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
     implementation 'com.alibaba:fastjson:1.2.31'
     implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    //地址选择器
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
 }
