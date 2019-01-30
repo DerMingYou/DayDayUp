@@ -30,10 +30,12 @@
         <activity android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.VideoPlayTestActivity"
+        <activity android:name=".activity.JzVideoPlayActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity android:name=".activity.ProvinceDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MediaPlayActivity"
             android:screenOrientation="portrait"/>
     </application>
 

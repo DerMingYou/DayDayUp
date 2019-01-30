@@ -11,4 +11,5 @@
     <string name="picker_text_show">显示地址选择器</string>
     <string name="address">地址</string>
     <string name="login">登陆</string>
+    <string name="video_play">视频播放</string>
 </resources>

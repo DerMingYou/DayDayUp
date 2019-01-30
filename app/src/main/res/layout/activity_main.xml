@@ -8,9 +8,14 @@
 
     <TextView
         android:id="@+id/tv_hello_word"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/video_play"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -31,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_hello_word" />
 
     <TextView
-        android:id="@+id/t_select_province"
+        android:id="@+id/tv_select_province"
         android:layout_width="111dp"
         android:layout_height="40dp"
         android:layout_marginTop="25dp"

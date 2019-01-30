@@ -5,14 +5,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.yjbest.daydayup.activity.LoginActivity;
+import com.yjbest.daydayup.activity.MediaPlayActivity;
 import com.yjbest.daydayup.activity.ProvinceDataActivity;
-import com.yjbest.daydayup.activity.VideoPlayTestActivity;
+import com.yjbest.daydayup.activity.JzVideoPlayActivity;
 import com.yjbest.daydayup.base.BaseActivity;
-import com.yjbest.daydayup.util.NetworkUtils;
-import com.yjbest.daydayup.util.SystemUtils;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
@@ -42,13 +40,17 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.to_login, R.id.t_select_province})
+    @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.to_login:
-                VideoPlayTestActivity.launch(mContext);
+            case R.id.tv_hello_word:
+//                JzVideoPlayActivity.launch(mContext);
+                MediaPlayActivity.launch(mContext);
                 break;
-            case R.id.t_select_province:
+            case R.id.to_login:
+                LoginActivity.launch(mContext);
+                break;
+            case R.id.tv_select_province:
                 ProvinceDataActivity.launch(mContext);
                 break;
         }
