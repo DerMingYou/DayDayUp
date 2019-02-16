@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.yjbest.daydayup.activity.DragItemActivity;
 import com.yjbest.daydayup.activity.LoginActivity;
 import com.yjbest.daydayup.activity.MediaPlayActivity;
 import com.yjbest.daydayup.activity.ProvinceDataActivity;
@@ -40,7 +41,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province})
+    @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province, R.id.tv_drag_item})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_hello_word:
@@ -52,6 +53,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_select_province:
                 ProvinceDataActivity.launch(mContext);
+                break;
+            case R.id.tv_drag_item:
+                DragItemActivity.launch(mContext);
                 break;
         }
     }

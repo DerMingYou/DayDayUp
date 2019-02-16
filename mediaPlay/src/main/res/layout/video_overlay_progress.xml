@@ -22,14 +22,14 @@
             android:id="@+id/tv_seek_current_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="00:00"
+            android:name="00:00"
             android:textColor="@color/colorPrimary"
             android:textSize="10sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / "
+            android:name=" / "
             android:textColor="#ffffff"
             android:textSize="10sp" />
 
@@ -37,7 +37,7 @@
             android:id="@+id/tv_seek_duration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="00:00"
+            android:name="00:00"
             android:textColor="#ffffff"
             android:textSize="10sp" />
 

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.yjbest.daydayup.MainActivity">
 
     <TextView
@@ -49,4 +50,14 @@
         app:layout_constraintStart_toStartOf="@+id/to_login"
         app:layout_constraintTop_toBottomOf="@+id/to_login" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_drag_item"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="@string/drag_item"/>
+
+</LinearLayout>
