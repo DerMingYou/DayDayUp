@@ -5,14 +5,18 @@
     <string name="connect_error">網絡連接錯誤</string>
     <string name="connect_timeout">網絡連接超時</string>
     <string name="bad_network">連接斷開</string>
-    <string name="parse_error">解析数据错误</string>
-    <string name="unknown_error">未知网络错误</string>
-    <string name="picker_text_parse">解析数据</string>
-    <string name="picker_text_show">显示地址选择器</string>
+    <string name="parse_error">解析數據錯誤</string>
+    <string name="unknown_error">未知網絡錯誤</string>
+    <string name="picker_text_parse">解析數據</string>
+    <string name="picker_text_show">顯示地址選擇器</string>
     <string name="address">地址</string>
     <string name="login">登錄</string>
-    <string name="video_play">视频播放</string>
+    <string name="video_play">視頻播放</string>
     <string name="drag_item">列表拖動</string>
     <string name="app_grade">APP評分</string>
     <string name="no_install_app_market">您的手機沒有安裝Android應用市場</string>
+    <string name="show_tw_chinese">繁體顯示</string>
+    <string name="change_language">切換語言</string>
+    <string name="show_chinese">中文顯示</string>
+    <string name="show_english">英文顯示</string>
 </resources>

@@ -6,4 +6,6 @@
 
     <color name="white">#FFFFFF</color>
     <color name="text_333">#333333</color>
+    <color name="orange_main">#f36b1b</color>
+    <color name="black_transparent">#aa000000</color>
 </resources>

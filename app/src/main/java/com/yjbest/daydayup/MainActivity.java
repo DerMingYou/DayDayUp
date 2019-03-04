@@ -8,6 +8,7 @@ import com.yjbest.daydayup.activity.DragItemActivity;
 import com.yjbest.daydayup.activity.LoginActivity;
 import com.yjbest.daydayup.activity.MediaPlayActivity;
 import com.yjbest.daydayup.activity.ProvinceDataActivity;
+import com.yjbest.daydayup.activity.SwitchTheLanguageActivity;
 import com.yjbest.daydayup.base.BaseActivity;
 import com.yjbest.daydayup.util.OpenAppMarketUtils;
 
@@ -41,7 +42,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province, R.id.tv_drag_item, R.id.tv_to_grade})
+    @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province, R.id.tv_drag_item, R.id.tv_to_grade, R.id.tv_change_language})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_hello_word:
@@ -59,6 +60,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_to_grade:
                 OpenAppMarketUtils.bySearchOpen(mContext);
+                break;
+            case R.id.tv_change_language:
+                SwitchTheLanguageActivity.launch(mContext);
                 break;
         }
     }

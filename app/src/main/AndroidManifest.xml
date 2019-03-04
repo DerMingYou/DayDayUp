@@ -43,6 +43,8 @@
 
         <activity android:name=".activity.DragItemActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SwitchTheLanguageActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

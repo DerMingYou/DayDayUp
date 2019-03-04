@@ -10,54 +10,76 @@
     <TextView
         android:id="@+id/tv_hello_word"
         android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_height="44dp"
         android:layout_marginTop="25dp"
         android:gravity="center"
         android:padding="12dp"
-        android:background="@color/colorPrimary"
+        android:lines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_btn_orange_pressed"
         android:text="@string/video_play"
         android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/to_login"
         android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_height="44dp"
         android:layout_marginTop="25dp"
         android:gravity="center"
         android:padding="12dp"
-        android:background="@color/colorPrimary"
+        android:lines="1"
+        android:ellipsize="end"
+        android:background="@drawable/shape_btn_orange_pressed"
         android:text="@string/login"
         android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/tv_select_province"
         android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_height="44dp"
         android:layout_marginTop="25dp"
         android:gravity="center"
         android:padding="12dp"
+        android:lines="1"
+        android:ellipsize="end"
         android:text="@string/address"
         android:textColor="@color/white"
-        android:background="@color/colorPrimary" />
+        android:background="@drawable/shape_btn_orange_pressed" />
 
     <TextView
         android:id="@+id/tv_drag_item"
         android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_height="44dp"
         android:textColor="@color/white"
         android:layout_marginTop="25dp"
+        android:lines="1"
+        android:ellipsize="end"
         android:gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_btn_orange_pressed"
         android:text="@string/drag_item"/>
 
     <TextView
         android:id="@+id/tv_to_grade"
         android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_height="44dp"
         android:textColor="@color/white"
         android:layout_marginTop="25dp"
+        android:lines="1"
+        android:ellipsize="end"
         android:gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_btn_orange_pressed"
         android:text="@string/app_grade"/>
+
+    <TextView
+        android:id="@+id/tv_change_language"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_orange_pressed"
+        android:text="@string/change_language"/>
 
 </LinearLayout>

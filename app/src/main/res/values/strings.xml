@@ -15,4 +15,8 @@
     <string name="drag_item">列表拖动</string>
     <string name="app_grade">APP评分</string>
     <string name="no_install_app_market">您的手机没有安装Android应用市场</string>
+    <string name="change_language">切换语言</string>
+    <string name="show_chinese">中文显示</string>
+    <string name="show_tw_chinese">繁体显示</string>
+    <string name="show_english">英文显示</string>
 </resources>

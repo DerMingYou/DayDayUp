@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_show_chinese"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_orange_pressed"
+        android:text="@string/show_chinese"/>
+
+    <TextView
+        android:id="@+id/tv_show_chinese_traditional"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_orange_pressed"
+        android:text="@string/show_tw_chinese"/>
+
+    <TextView
+        android:id="@+id/tv_show_english"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:background="@drawable/shape_btn_orange_pressed"
+        android:text="@string/show_english"/>
+
+</LinearLayout>
