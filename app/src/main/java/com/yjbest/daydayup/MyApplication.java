@@ -2,10 +2,12 @@ package com.yjbest.daydayup;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Build;
 
 import com.yjbest.daydayup.http.ApiClient;
 import com.yjbest.daydayup.http.bean.AccessToken;
+import com.yjbest.daydayup.util.LanguageUtils;
 import com.yjbest.daydayup.util.LogUtils;
 import com.yjbest.daydayup.util.SPUtils;
 import com.yjbest.daydayup.util.SystemUtils;
@@ -24,8 +26,24 @@ public class MyApplication extends Application {
     }
 
     @Override
+    protected void attachBaseContext(Context base) {
+        //保存系统当前选择语言
+        LanguageUtils.saveSystemCurrentLanguage(base);
+        super.attachBaseContext(base);
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        //保存系统选择语言
+        LanguageUtils.onConfigurationChanged(getApplicationContext());
+    }
+
+    @Override
     public void onCreate() {
         super.onCreate();
+
+        LanguageUtils.setAppLanguage(this);
 
         ApiClient.init();
 

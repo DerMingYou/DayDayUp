@@ -25,4 +25,10 @@ public class AppConstants {
     public static final String EXPIRES_IN = "expires_in";
     public static final String ACCESS_TOKEN = "access_token";
     public static final String LOGIN_TIME = "login_time";
+
+    public static final String DEFAULT_LANGUAGE = "default_language";
+    public static final int DEFAULT_LANGUAGE_AUTO = 0;
+    public static final int DEFAULT_LANGUAGE_CHINA = 1;
+    public static final int DEFAULT_LANGUAGE_CHINA_TW = 2;
+    public static final int DEFAULT_LANGUAGE_ENGLISH = 3;
 }

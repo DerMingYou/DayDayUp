@@ -1,5 +1,7 @@
 package com.yjbest.daydayup;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -40,6 +42,12 @@ public class MainActivity extends BaseActivity {
     @Override
     public void showNoNetworkLayout(String msg) {
 
+    }
+
+    public static void reStart(Context context) {
+        Intent intent = new Intent(context, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 
     @OnClick({R.id.tv_hello_word, R.id.to_login, R.id.tv_select_province, R.id.tv_drag_item, R.id.tv_to_grade, R.id.tv_change_language})

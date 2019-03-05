@@ -19,4 +19,5 @@
     <string name="show_chinese">中文显示</string>
     <string name="show_tw_chinese">繁体显示</string>
     <string name="show_english">英文显示</string>
+    <string name="system_auto">系统默认</string>
 </resources>

@@ -19,4 +19,5 @@
     <string name="change_language">Switch The Language</string>
     <string name="show_chinese">Show Chinese</string>
     <string name="show_english">Show English</string>
+    <string name="system_auto">系统默认</string>
 </resources>

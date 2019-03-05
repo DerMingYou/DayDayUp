@@ -123,21 +123,6 @@ public abstract class BaseActivity extends AppCompatActivity implements ICommonV
         res.updateConfiguration(conf, dm);
     }
 
-    public void changeAppLanguage(Locale locale) {
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        Configuration configuration = getResources().getConfiguration();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-            configuration.setLocale(locale);
-        } else {
-            configuration.locale = locale;
-        }
-        getResources().updateConfiguration(configuration, metrics);
-        //重新启动Activity
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

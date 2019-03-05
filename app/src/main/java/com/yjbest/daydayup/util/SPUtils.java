@@ -5,11 +5,12 @@ import android.content.SharedPreferences;
 
 import com.yjbest.daydayup.AppConstants;
 
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * Description:
+ * Description: SharedPreferences工具类
  * Data：2018/10/27-15:06
  * Author: DerMing_You
  */
@@ -250,5 +251,15 @@ public class SPUtils {
      */
     public Set<String> getSetString(String key, Set<String> defaultValue) {
         return sp.getStringSet(key, defaultValue);
+    }
+
+    private Locale systemCurrentLocal = Locale.CHINA;
+
+    public Locale getSystemCurrentLocal() {
+        return systemCurrentLocal;
+    }
+
+    public void setSystemCurrentLocal(Locale local) {
+        this.systemCurrentLocal = local;
     }
 }

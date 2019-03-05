@@ -10,11 +10,15 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.common.eventbus.EventBus;
+import com.yjbest.daydayup.AppConstants;
+import com.yjbest.daydayup.MainActivity;
 import com.yjbest.daydayup.R;
 import com.yjbest.daydayup.base.BaseActivity;
 import com.yjbest.daydayup.http.eventbus.ChangeLanguageEventBus;
+import com.yjbest.daydayup.util.LanguageUtils;
 import com.yjbest.daydayup.util.OpenAppMarketUtils;
 import com.yjbest.daydayup.util.RxBus;
+import com.yjbest.daydayup.util.SPUtils;
 import com.yjbest.daydayup.util.SwitchLanguageUtils;
 
 import java.util.Locale;
@@ -69,17 +73,25 @@ public class SwitchTheLanguageActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.tv_show_chinese, R.id.tv_show_chinese_traditional, R.id.tv_show_english})
+    private void changeAppLanguage(int select) {
+        LanguageUtils.saveSelectLanguage(this, select);
+        MainActivity.reStart(this);
+    }
+
+    @OnClick({R.id.tv_system_auto, R.id.tv_show_chinese, R.id.tv_show_chinese_traditional, R.id.tv_show_english})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.tv_system_auto:
+                changeAppLanguage(AppConstants.DEFAULT_LANGUAGE_AUTO);
+                break;
             case R.id.tv_show_chinese: //简体中文
-                changeAppLanguage(Locale.SIMPLIFIED_CHINESE);
+                changeAppLanguage(AppConstants.DEFAULT_LANGUAGE_CHINA);
                 break;
             case R.id.tv_show_chinese_traditional: //繁体中文
-                changeAppLanguage(Locale.TRADITIONAL_CHINESE);
+                changeAppLanguage(AppConstants.DEFAULT_LANGUAGE_CHINA_TW);
                 break;
             case R.id.tv_show_english:  //英文
-                changeAppLanguage(Locale.US);
+                changeAppLanguage(AppConstants.DEFAULT_LANGUAGE_ENGLISH);
                 break;
         }
     }
