@@ -52,7 +52,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation project(':mediaPlay')
-    implementation 'com.android.support:appcompat-v7:28.+'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
@@ -83,7 +83,7 @@ dependencies {
     implementation 'cn.jzvd:jiaozivideoplayer:6.4.1'
     //地址选择器
     implementation 'com.contrarywind:Android-PickerView:3.2.6'
-    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
     //引入J神的rxrelay2，出现异常仍然可以处理
     implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
 }
