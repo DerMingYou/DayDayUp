@@ -8,4 +8,15 @@
     <color name="text_333">#333333</color>
     <color name="orange_main">#f36b1b</color>
     <color name="black_transparent">#aa000000</color>
+    <color name="normal_black_1">#333333</color>
+    <color name="normal_black_2">#666666</color>
+    <color name="normal_black_3">#999999</color>
+    <color name="normal_black_4">#CCCCCC</color>
+    <color name="normal_black_5">#f4f4f4</color>
+    <color name="normal_black_6">#dddddd</color>
+    <color name="normal_black_b">#bbbbbb</color>
+    <color name="normal_black_eee">#eeeeee</color>
+
+    <color name="weak_color_light">#F8F8F8</color>
+    <color name="weak_color_dark">#CDCED3</color>
 </resources>

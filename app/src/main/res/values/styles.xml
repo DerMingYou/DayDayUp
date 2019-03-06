@@ -13,4 +13,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 横线 -->
+    <style name="div_hor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px_1</item>
+        <item name="android:background">@color/weak_color_dark</item>
+    </style>
 </resources>
